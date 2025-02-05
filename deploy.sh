@@ -7,13 +7,6 @@ echo hi123
 sh 'chmod +x build.sh'
 sh './build.sh'
 
-# Docker login with old credentials
-docker login -u ar8888 -p dckr_pat_HU8f1bsQJp3j2DnCttXuuoppo7w
-
-# Tag and push old image
-docker tag test ar8888/ar
-docker push ar8888/ar
-
 # New deployment process
 echo "⚙️ Building the Docker image..."
 docker build -t custom-nginx .
