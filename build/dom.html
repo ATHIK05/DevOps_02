@@ -1,0 +1,37 @@
+<html>
+<head>
+    <title>DOM</title>
+    <ul id="myList">
+        <li>Biscuit</li>
+    </ul>
+    <body>
+        <button onclick="myfunction()">Insert</button>
+        <button onclick="replace()">Replace</button>
+        <button onclick="remove()">Remove</button>
+    </body>
+    <script>
+        const le=document.createElement("h1");
+        const text=document.createTextNode("Bakery");
+        le.appendChild(text);
+        document.body.appendChild(le);
+        function myfunction(){
+            const li = document.createElement("li");
+            const n= document.createTextNode("Bread");
+            li.appendChild(n);
+            const list=document.getElementById("myList");
+            list.insertBefore(li,list.children[0]);
+        }
+        function replace(){
+            const li = document.createElement("li");
+            const n= document.createTextNode("Jam");
+            li.appendChild(n);
+            const list=document.getElementById("myList");
+            list.replaceChild(li,list.children[1]);
+        }
+        function remove(){
+            const list=document.getElementById("myList");
+            list.removeChild(list.children[1]);
+        }
+    </script>
+</head>
+</html>

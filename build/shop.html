@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mani & Ak</title>
+<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"/>
+<link rel="stylesheet" href="style.css">
+<style>
+    /* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+#header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #f8f8f8;
+}
+
+#header .logo {
+    height: 50px;
+}
+
+#navbar {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+#navbar li {
+    margin-left: 20px;
+}
+
+#navbar a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+}
+
+#navbar a.active {
+    color: #007bff;
+}
+
+#page-header {
+    background: #f8f8f8;
+    padding: 60px 0;
+    text-align: center;
+}
+
+#page-header h2 {
+    font-size: 36px;
+    margin: 0;
+}
+
+#page-header p {
+    font-size: 18px;
+    margin: 10px 0 0;
+}
+
+.section-p1 {
+    padding: 40px 20px;
+}
+
+.section {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.section a {
+    text-decoration: none;
+    color: #007bff;
+    margin: 0 5px;
+}
+
+.section a i {
+    margin-left: 5px;
+}
+
+.section-p1.section-m1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #f8f8f8;
+    padding: 20px;
+}
+
+.section-p1.section-m1 .newstext {
+    flex: 1;
+}
+
+.section-p1.section-m1 .form {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.section-p1.section-m1 .form input {
+    padding: 10px;
+    margin-right: 10px;
+    width: 200px;
+}
+
+.section-p1.section-m1 .form button {
+    padding: 10px 20px;
+}
+
+footer.section-p1 {
+    background: #f8f8f8;
+    padding: 40px 20px;
+}
+
+footer .col {
+    text-align: center;
+}
+
+footer .col h4 {
+    margin-top: 0;
+}
+
+footer .col p {
+    margin: 5px 0;
+}
+
+footer .follow .icon {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+footer .follow .icon i {
+    font-size: 20px;
+    margin: 0 10px;
+    color: #333;
+}
+
+/* Card styles */
+.card.pro {
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.card.pro:hover {
+    transform: scale(1.05);
+}
+
+.card-img-top {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.card-body {
+    text-align: center;
+    padding: 15px;
+}
+
+.card-body .star {
+    color: #f39c12;
+    margin: 10px 0;
+}
+
+.card-body h4 {
+    color: #333;
+    margin-top: 10px;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+.btn-primary .cart {
+    margin-left: 5px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    #header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #navbar {
+        margin-top: 10px;
+        text-align: center;
+    }
+
+    #navbar li {
+        display: block;
+        margin: 5px 0;
+    }
+
+    .section-p1.section-m1 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .section-p1.section-m1 .form {
+        justify-content: center;
+    }
+}
+</style>
+</head>
+<body>
+    <section id="header">
+        <a href="index.html"><img src="img/logo.png" class="logo" alt=""></a>
+        <div>
+            <ul id="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a class="active" href="shop.html">Shop</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="cart.html"><i class="far fa-shopping-bag"></i></a></li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="page-header">
+        <h2>#stayhome</h2>
+        <p>Save more with coupons & up to 70% off! </p>
+    </section>
+
+    <section id="product1" class="section-p1 my-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="card pro" onclick="window.location.href='sproduct.html';">
+                        <img src="img/products/f2.jpg" class="card-img-top" alt="Nike Shoes">
+                        <div class="card-body">
+                            <span class="text-muted">Nike</span>
+                            <h5 class="card-title">Shoes</h5>
+                            <div class="star">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <h4>Rs:370</h4>
+                            <a href="cart.html" class="btn btn-primary"><i class="fal fa-shopping-cart cart"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="card pro" onclick="window.location.href='sproduct.html';">
+                        <img src="img/products/f2.jpg" class="card-img-top" alt="Nike Shoes">
+                        <div class="card-body">
+                            <span class="text-muted">Nike</span>
+                            <h5 class="card-title">Shoes</h5>
+                            <div class="star">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <h4>Rs:370</h4>
+                            <a href="cart.html" class="btn btn-primary"><i class="fal fa-shopping-cart cart"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="card pro" onclick="window.location.href='sproduct.html';">
+                        <img src="img/products/f2.jpg" class="card-img-top" alt="Nike Shoes">
+                        <div class="card-body">
+                            <span class="text-muted">Nike</span>
+                            <h5 class="card-title">Shoes</h5>
+                            <div class="star">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <h4>Rs:370</h4>
+                            <a href="cart.html" class="btn btn-primary"><i class="fal fa-shopping-cart cart"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="card pro" onclick="window.location.href='sproduct.html';">
+                        <img src="img/products/f2.jpg" class="card-img-top" alt="Nike Shoes">
+                        <div class="card-body">
+                            <span class="text-muted">Nike</span>
+                            <h5 class="card-title">Shoes</h5>
+                            <div class="star">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <h4>Rs:370</h4>
+                            <a href="cart.html" class="btn btn-primary"><i class="fal fa-shopping-cart cart"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="card pro" onclick="window.location.href='sproduct.html';">
+                        <img src="img/products/f2.jpg" class="card-img-top" alt="Nike Shoes">
+                        <div class="card-body">
+                            <span class="text-muted">Nike</span>
+                            <h5 class="card-title">Shoes</h5>
+                            <div class="star">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <h4>Rs:370</h4>
+                            <a href="cart.html" class="btn btn-primary"><i class="fal fa-shopping-cart cart"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Repeat similar product card structure for other products -->
+            </div>
+        </div>
+    </section>
+
+    <section id="pagination" class="section">
+        <a href="#">1</a>
+        <a href="#">2</a>
+        <a href="#"><i class="fal fa-long-arrow-alt-right"></i></a>        
+    </section>
+
+    <section id="newsletter" class="section-p1 section-m1">
+        <div class="newstext">
+            <h4>Sign Up for Newsletters</h4>
+            <p>Get E-mail updates about our latest shop and<span>Special Offers.</span></p>
+        </div>
+        <div class="form">
+            <input type="text" placeholder="Your email address">
+            <button class="normal">Sign Up</button>
+        </div>
+    </section>
+
+    <footer class="section-p1">
+        <div class="col">
+            <img src="img/logo.png" alt="">
+            <h4>Contact</h4>
+            <p><strong>Address: </strong> 20, Mosikeeranar Street, Indira Nagar, Erode-638001</p>
+            <p><strong>Phone:</strong> 9080262334, 9443217257</p>
+            <p><strong>Hours:</strong> 10:00 - 18:00, Mon - Sat</p>
+            <div class="follow">
+                <h4>Follow us</h4>
+                <div class="icon">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-pinterest-p"></i>
+                    <i class="fab fa-youtube"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+<script src="script.js"></script>
+</body>
+</html>
+</html>
